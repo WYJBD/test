@@ -8,6 +8,10 @@
     p {
         color: red;
     }
+    
+    html {
+        background-color: purple;
+    }
 </style>
 
 <body>
@@ -36,7 +40,7 @@
         if (numbers == 1) {
             document.getElementById('result').innerHTML = '对了';
         } else if (numbers != 0) {
-            document.getElementById('result').innerHTML = '错了';
+            document.getElementById('result').innerHTML = new Date().getDate();
         }
     }
 
