@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html>
+
+<head>
+
+</head>
+<style>
+    p {
+        color: red;
+    }
+</style>
+
+<body>
+    <strong>What two qualities set Theatre apart from other art forms?</strong>
+    <br>
+    <form>
+        <br><input name="xuanxiang" type="radio" onclick="dianlecheckbox(1)"> Immediacy and Presence
+        <br><input name="xuanxiang" type="radio" onclick="dianlecheckbox(2)"> Loudness and Brightness
+        <br><input name="xuanxiang" type="radio" onclick="dianlecheckbox(3)"> Presence and Sparkle
+        <br><input name="xuanxiang" type="radio" onclick="dianlecheckbox(4)"> Immediacy and Listening
+    </form>
+    <img onclick="diantu()" src="https://ssl.gstatic.com/android/adm/static/3f69ea5cb490489c19743c3d8cb6e178/images/illo_transfer_number_onboarding_1x.png">
+    <br>
+    <button onclick="panti()">判题</button>
+    <p id="result">&nbsp;</p>
+</body>
+
+<script>
+    var numbers = 0;
+
+    function dianlecheckbox(number) {
+        numbers = number;
+    }
+
+    function panti() {
+        if (numbers == 1) {
+            document.getElementById('result').innerHTML = '对了';
+        } else if (numbers != 0) {
+            document.getElementById('result').innerHTML = '错了';
+        }
+    }
+
+    function diantu() {
+        window.location.href = 'http://google.com';
+    }
+</script>
+
+</html>
